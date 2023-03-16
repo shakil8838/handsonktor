@@ -30,6 +30,17 @@ dependencies {
     // GSON
     implementation("com.google.code.gson:gson:2.10.1")
 
+    // From Simplified Coding
+    implementation("io.ktor:ktor-auth:$ktor_version")
+    implementation("io.ktor:ktor-auth-jwt:$ktor_version")
+    implementation("commons-codec:commons-codec:1.14")
+    implementation("org.jetbrains.exposed:exposed-core:0.37.3")
+    implementation("org.jetbrains.exposed:exposed-dao:0.37.3")
+    implementation("org.jetbrains.exposed:exposed-jdbc:0.37.3")
+    implementation("org.jetbrains.exposed:exposed-java-time:0.37.3")
+    implementation("org.postgresql:postgresql:42.3.3")
+    implementation("com.zaxxer:HikariCP:5.0.1")
+
     testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
 }

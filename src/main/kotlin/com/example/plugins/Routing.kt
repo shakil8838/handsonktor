@@ -1,11 +1,13 @@
 package com.example.plugins
 
 import com.example.data.datamodels.SpeedResponseDataModel
+import com.example.data.db.SpeedTable
 import com.google.gson.Gson
 import io.ktor.server.routing.*
 import io.ktor.server.response.*
 import io.ktor.server.application.*
 import kotlinx.coroutines.CoroutineScope
+import org.jetbrains.exposed.sql.insert
 
 fun Application.configureRouting() {
 
